@@ -100,7 +100,7 @@ export const LandingPage = () => {
         <div className="row p-0 m-0">
           <div
             className="col-7 fw-semibold text-white ms-5"
-            style={{ fontSize: "3.5em", marginTop: "4em" }}
+            style={{ fontSize: "3.5em", marginTop: "5em" }}
           >
             <p>
               Desafío Commerce Society
