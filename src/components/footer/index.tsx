@@ -26,55 +26,71 @@ const defaultTheme = createTheme();
 
 export const Footer = () => {
   return (
-    <ThemeProvider theme={defaultTheme}>
-      <Box
-        sx={{
-          display: "flex",
-          flexDirection: "column",
-          minHeight: "100vh",
-        }}
-      >
-        <CssBaseline />
+    <div className="mx-auto">
+      <ThemeProvider theme={defaultTheme}>
         <Box
-          component="footer"
           sx={{
-            py: 2,
-            px: 2,
-            mt: "auto",
-            backgroundColor: (theme) =>
-              theme.palette.mode === "light"
-                ? theme.palette.grey[200]
-                : theme.palette.grey[800],
-            position: "sticky",
-            bottom: 0,
+            display: "flex",
+            flexDirection: "column",
+            minHeight: "100vh",
+            mx: "auto",
           }}
         >
-          <Container maxWidth="sm">
-            <Typography variant="body1" className="mb-2">
-              Seguime en redes, ampliemos nuestra red
-              <div style={{ marginTop: "10px" }}>
-                <Link
-                  href="https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  style={{ marginRight: "10px" }}
-                >
-                  <LinkedInIcon />
-                </Link>
-
-                <Link
-                  href="https://github.com/jon0010"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                >
-                  <GitHubIcon />
-                </Link>
+          <CssBaseline />
+          <Box
+            component="footer"
+            sx={{
+              py: 1,
+              px: 2,
+              mt: "auto",
+              backgroundColor: (theme) =>
+                theme.palette.mode === "light"
+                  ? theme.palette.grey[200]
+                  : theme.palette.grey[800],
+              position: "sticky",
+              bottom: 0,
+              gridTemplateColumns: "1fr 1fr",
+              alignItems: "center",
+            }}
+          >
+            <Container maxWidth="sm">
+              <div style={{ display: "flex", justifyContent: "space-between" }}>
+                <div>
+                  <Typography variant="body1" className="mb-2">
+                    Seguime en redes, ampliemos nuestra red
+                  </Typography>
+                  <Copyright />
+                </div>
+                <div style={{ display: "flex", alignItems: "center" }}>
+                  <div
+                    style={{
+                      borderRight: "1px solid #000",
+                      paddingRight: "10px",
+                    }}
+                  ></div>
+                  <div style={{ marginLeft: "10px" }}>
+                    <Link
+                      href="https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                    >
+                      <LinkedInIcon />
+                    </Link>
+                    <Link
+                      href="https://github.com/jon0010"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      style={{ marginLeft: "10px" }}
+                    >
+                      <GitHubIcon />
+                    </Link>
+                  </div>
+                </div>
               </div>
-            </Typography>
-            <Copyright />
-          </Container>
+            </Container>
+          </Box>
         </Box>
-      </Box>
-    </ThemeProvider>
+      </ThemeProvider>
+    </div>
   );
 };

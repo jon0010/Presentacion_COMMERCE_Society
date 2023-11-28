@@ -1,6 +1,12 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
 .particles-container {
   position: relative;
-  max-height: 300px;
+  height: 21vh;
+  margin-bottom: -30vh;
   z-index: -5;
 }
 
