@@ -2,7 +2,6 @@ import React, { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
-import nodeimg from "../../assets/nodeimg.png";
 import "./landing.css";
 
 export const LandingPage = () => {
@@ -88,8 +87,20 @@ export const LandingPage = () => {
     detectRetina: true,
   };
 
+  const getFontSizeAndMargin = () => {
+    const windowWidth = window.innerWidth;
+    if (windowWidth < 576) {
+      return { fontSize: "2.2em", marginTop: "4em" };
+    } else {
+      return { fontSize: "3.5em", marginTop: "5em" };
+    }
+  };
+
   return (
-    <div className="particles-container">
+    <div
+      className="particles-container"
+      style={{ width: "100%", overflowX: "hidden" }}
+    >
       <Particles
         id="tsparticles"
         init={particlesInit}
@@ -99,22 +110,14 @@ export const LandingPage = () => {
       <div className="content-container1">
         <div className="row p-0 m-0">
           <div
-            className="col-7 fw-semibold text-white ms-5"
-            style={{ fontSize: "3.5em", marginTop: "5em" }}
+            className="col-md-7 col-sm-12 fw-semibold text-white ms-5 text-sm"
+            style={{ ...getFontSizeAndMargin() }}
           >
             <p>
               Desafío Commerce Society
               <br />
               NODE JS
             </p>
-          </div>
-          <div className="col-4 p-0 m-0">
-            <img
-              src={nodeimg}
-              style={{ marginTop: "11em" }}
-              className="img-fluid"
-              alt="nodeimg"
-            />
           </div>
         </div>
       </div>

@@ -43,30 +43,33 @@ export const Footer = () => {
           left: 0,
           right: 0,
           width: "100%",
-          gridTemplateColumns: "1fr 1fr",
+          maxWidth: "100%",
           alignItems: "center",
         }}
+        className="container-fluid"
       >
-        <Container maxWidth="sm">
-          <div style={{ display: "flex", justifyContent: "space-between" }}>
-            <div>
+        <Container maxWidth="md">
+          <div className="row">
+            <div className="col-md-6 col-sm-9">
               <Typography variant="body1" className="mb-2">
                 Seguime en redes, ampliemos nuestra red
               </Typography>
               <Copyright />
             </div>
-            <div style={{ display: "flex", alignItems: "center" }}>
+            <div className="col-md-6 col-sm-3 d-flex justify-content-start align-items-center">
               <div
                 style={{
                   borderRight: "1px solid #000",
                   paddingRight: "10px",
                 }}
+                className="me-2"
               ></div>
-              <div style={{ marginLeft: "10px" }}>
+              <div className="ms-2">
                 <Link
                   href="https://www.linkedin.com/in/jon-nahuel-pereyra-832191257/"
                   target="_blank"
                   rel="noopener noreferrer"
+                  className="me-2"
                 >
                   <LinkedInIcon />
                 </Link>
@@ -74,7 +77,6 @@ export const Footer = () => {
                   href="https://github.com/jon0010"
                   target="_blank"
                   rel="noopener noreferrer"
-                  style={{ marginLeft: "10px" }}
                 >
                   <GitHubIcon />
                 </Link>

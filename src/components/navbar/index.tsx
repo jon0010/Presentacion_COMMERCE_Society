@@ -1,30 +1,37 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState } from "react";
+import { Link, NavLink } from "react-router-dom";
 import nodeLogo from "../../assets/node.png";
 
 export const Navbar = () => {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const handleNavToggle = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <NavLink className="navbar-brand" to="/">
-          <img src={nodeLogo} alt="nodelogo" width={60} className="ms-3" />
-        </NavLink>
+        <Link className="navbar-brand" to="/">
+          <img src={nodeLogo} alt="nodelogo" width={60} className="ms-3 mt-2" />
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded={isNavOpen}
           aria-label="Toggle navigation"
+          onClick={handleNavToggle}
         >
           <span className="navbar-toggler-icon"></span>
         </button>
         <div
-          className="collapse navbar-collapse d-flex justify-content-end me-3"
-          id="navbarNav"
+          className={`collapse navbar-collapse ${isNavOpen ? "show" : ""}`}
+          id="navbarSupportedContent"
         >
-          <ul className="navbar-nav fw-semibold">
+          <ul className="navbar-nav me-auto mb-2 mb-lg-0">
             <li className="nav-item me-4">
               <NavLink className="nav-link" to="/por-que-node">
                 Por qué Node?

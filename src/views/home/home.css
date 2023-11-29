@@ -34,3 +34,8 @@
 .bold-custom {
   color: #b71af6;
 }
+
+p {
+  font-size: 1.2em;
+  line-height: 1.7em;
+}
