@@ -1,9 +1,9 @@
 import { Link } from "react-router-dom";
 import jon from "../../assets/jon.png";
 import stackoverNode from "../../assets/stackoverNode.png";
-import "./home.css";
 import { NodeBanner } from "../../components";
 import nodeFramework from "../../assets/nodeFrameworks.jpg";
+import "./home.css";
 
 export const Home = () => {
   return (
@@ -13,17 +13,19 @@ export const Home = () => {
           ¿Por qué los aspirantes a desarrollo web deberían aprender Node.js?
         </h1>
       </div>
-      <div className="col-md-7 col-sm-12 text-start">
-        <div className="mt-3 ms-3">
+      <div className="col-md-8 col-sm-12 text-start">
+        <div className="mt-3 ms-1">
           <h2 className="fw-semibold">
             Razones por las que elegí y deberías elegir NODE
           </h2>
           <p className="mt-3">
-            Bienvenido/as a este espacio donde juntos reflexionaremos sobre
-            estrategias para instruirnos de la manera más óptima en Node.js y
-            por qué deberíamos tenerlo en cuenta al momento de empezar con el
-            arte del desarrollo backend. En primer lugar, para hacer una buena
-            elección, cabe destacar el &nbsp;
+            Bienvenido/as a este espacio donde desde mi experiencia, los invito
+            a reflexionar sobre estrategias para instruirnos de la manera más
+            óptima en Node.js y por qué deberíamos tenerlo en cuenta al momento
+            de empezar con el arte del desarrollo backend. Cabe aclarar que es
+            mi punto de vista pero voy a fundamentar esta información basada en
+            fuentes que van a poder visitar. En primer lugar, para hacer una
+            buena elección, cabe destacar el &nbsp;
             <Link
               to="https://survey.stackoverflow.co/2023/#section-most-popular-technologies-web-frameworks-and-technologies"
               target="_blank"
@@ -83,7 +85,7 @@ export const Home = () => {
               programación, ya que escribirías JavaScript tanto del lado del
               cliente como del servidor.
             </b>
-            ... pero, ¿en qué me afectaría aprender otro lenguaje para hacer
+            Pero, ¿en qué me afectaría aprender otro lenguaje para hacer
             backend? La respuesta es "en el tiempo". Tengamos en cuenta que a
             veces el tiempo para aprender un nuevo lenguaje de programación para
             desarrollar backend nos podría jugar en contra, ya sea por prisas
@@ -92,7 +94,7 @@ export const Home = () => {
             diciembre de 2023, es el lenguaje de programación más utilizado.
             Podemos hacer una plataforma completa desde frontend, backend y
             queries a bases de datos con ayuda de ORM basados en JavaScript,
-            gracias a esa.{" "}
+            gracias a esa{" "}
             <b className="bold-custom">
               flexibilidad, popularidad y versatilidad
             </b>{" "}
@@ -132,7 +134,7 @@ export const Home = () => {
           className="card border border-dark mt-4 mb-5"
           style={{
             width: "15em",
-            height: "21em",
+            height: "18em",
           }}
         >
           <span>
@@ -152,9 +154,6 @@ export const Home = () => {
             <p className="card-text">
               Articulo sobre beneficios de aprender Node.js
             </p>
-            <Link to="url-del-link" className="btn btn-dark">
-              Descargar en PDF
-            </Link>
           </div>
         </div>
       </div>

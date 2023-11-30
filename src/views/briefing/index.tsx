@@ -1,14 +1,13 @@
-
 export const Briefing = () => {
   return (
-    <div className="c1">
+    <div className="row p-0 m-3 c1">
       <div className="title1">
         <h1 className="text-white fw-semibold">
           Más allá de las aulas
           <br /> La realidad de los programadores junior en el mercado laboral
         </h1>
       </div>
-      <div className="col-md-10 col-sm-12 p-3 mb-5">
+      <div className="col-md-8 col-sm-12 p-4 title2 d-flex flex-column align-items-start">
         <h2 className="fw-semibold">
           El dilema del huevo y la gallina: como conseguir experiencia sin tener
           experiencia
@@ -169,6 +168,7 @@ export const Briefing = () => {
           exitosa en el desarrollo.
         </p>
       </div>
+      <div className="col-3"></div>
     </div>
   );
 };
