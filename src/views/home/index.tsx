@@ -3,7 +3,7 @@ import jon from "../../assets/jon.png";
 import stackoverNode from "../../assets/stackoverNode.png";
 import "./home.css";
 import { NodeBanner } from "../../components";
-import nodeFrameworks from "../../assets/NodeFrameworks.jpg";
+import nodeFramework from "../../assets/nodeFrameworks.jpg";
 
 export const Home = () => {
   return (
@@ -125,7 +125,7 @@ export const Home = () => {
         <img
           className="img-fluid"
           style={{ border: "solid 3px" }}
-          src={nodeFrameworks}
+          src={nodeFramework}
           alt="nodeFrameworks"
         />
         <div
