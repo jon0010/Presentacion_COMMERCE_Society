@@ -12,7 +12,12 @@ function Copyright() {
   return (
     <Typography variant="body2" color="text.secondary">
       {"Hecho con 💖 "}
-      <Link color="inherit" href="https://jonnahuelpereyra.com.ar">
+      <Link
+        color="inherit"
+        href="https://jonnahuelpereyra.com.ar"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
         jonnahuelpereyra.com.ar
       </Link>{" "}
       &nbsp;

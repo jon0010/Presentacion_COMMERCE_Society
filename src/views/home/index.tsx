@@ -25,7 +25,11 @@ export const Home = () => {
             por qué deberíamos tenerlo en cuenta al momento de empezar con el
             arte del desarrollo backend. En primer lugar, para hacer una buena
             elección, cabe destacar el &nbsp;
-            <Link to="https://survey.stackoverflow.co/2023/#section-most-popular-technologies-web-frameworks-and-technologies">
+            <Link
+              to="https://survey.stackoverflow.co/2023/#section-most-popular-technologies-web-frameworks-and-technologies"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               Informe Survey stack overflow 2023.
             </Link>{" "}
             <br />

@@ -10,10 +10,10 @@ export const Navbar = () => {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg bg-body-tertiary">
+    <nav className="navbar navbar-expand-lg bg-body-tertiary m-0 p-0">
       <div className="container-fluid">
         <Link className="navbar-brand" to="/">
-          <img src={nodeLogo} alt="nodelogo" width={60} className="ms-3 mt-2" />
+          <img src={nodeLogo} alt="nodelogo" width={60} className="ms-3" />
         </Link>
         <button
           className="navbar-toggler"
@@ -38,13 +38,8 @@ export const Navbar = () => {
               </NavLink>
             </li>
             <li className="nav-item me-4">
-              <NavLink className="nav-link" to="/empleabilidad">
-                Empleabilidad
-              </NavLink>
-            </li>
-            <li className="nav-item me-4">
               <NavLink className="nav-link" to="/evaluacion">
-                Evaluación
+                Evaluación y optimización
               </NavLink>
             </li>
             <li className="nav-item me-4">
