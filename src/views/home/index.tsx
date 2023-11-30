@@ -1,4 +1,3 @@
-import React from "react";
 import { Link } from "react-router-dom";
 import jon from "../../assets/jon.png";
 import stackoverNode from "../../assets/stackoverNode.png";

@@ -1,4 +1,3 @@
-import React from "react";
 import "./eval.css";
 
 export const Evaluacion = () => {

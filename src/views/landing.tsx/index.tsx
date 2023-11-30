@@ -1,8 +1,11 @@
-import React, { useCallback } from "react";
+import { useCallback } from "react";
 import type { Container, Engine } from "tsparticles-engine";
 import Particles from "react-particles";
 import { loadSlim } from "tsparticles-slim";
+
 import "./landing.css";
+
+interface IOptions {}
 
 export const LandingPage = () => {
   const particlesInit = useCallback(async (engine: Engine) => {
@@ -17,7 +20,7 @@ export const LandingPage = () => {
     []
   );
 
-  const particlesOptions = {
+  const particlesOptions: IOptions = {
     background: {
       color: {
         value: "#40005D",

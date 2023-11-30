@@ -1,4 +1,3 @@
-import React from "react";
 import bannerNode from "../../assets/bannerNode.jpg";
 
 export const NodeBanner = () => {

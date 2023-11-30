@@ -1,4 +1,3 @@
-import React from "react";
 import { LandingPage, Home, Evaluacion, Briefing } from "./views";
 import { Footer, Navbar } from "./components";
 import { Route, Routes } from "react-router-dom";
