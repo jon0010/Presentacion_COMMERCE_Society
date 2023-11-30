@@ -3,13 +3,13 @@ import "./eval.css";
 
 export const Evaluacion = () => {
   return (
-    <div style={{ marginBottom: "80px" }}>
+    <div>
       <div className="title1">
         <h1 className="text-white fw-semibold">
           Enfoque de evaluación y oportunidades de mejora
         </h1>
       </div>
-      <div className="col-md-10 col-sm-12 p-4">
+      <div className="col-md-10 col-sm-12 p-4 title2">
         <h2 className="fw-semibold">
           ¿Cómo medir las habilidades de un estudiante de desarrollo backend?
         </h2>

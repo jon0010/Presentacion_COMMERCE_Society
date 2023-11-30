@@ -8,13 +8,13 @@ import nodeFrameworks from "../../assets/NodeFrameworks.jpg";
 
 export const Home = () => {
   return (
-    <div className="row contenedor" style={{ marginBottom: "70px" }}>
+    <div className="row contenedor m-0 p-3">
       <div className="title1">
         <h1 className="text-white fw-semibold">
           ¿Por qué los aspirantes a desarrollo web deberían aprender Node.js?
         </h1>
       </div>
-      <div className="col-md-7 col-sm-12 text-start m-0">
+      <div className="col-md-7 col-sm-12 text-start">
         <div className="mt-3 ms-3">
           <h2 className="fw-semibold">
             Razones por las que elegí y deberías elegir NODE
@@ -122,7 +122,7 @@ export const Home = () => {
           <img className="mb-5" src="" alt="" />
         </div>
       </div>
-      <div className="col-md-3 col-sm-12 d-flex flex-column align-items-center m-0">
+      <div className="col-md-3 col-sm-12 d-flex flex-column align-items-center mb-5">
         <img
           className="img-fluid"
           style={{ border: "solid 3px" }}

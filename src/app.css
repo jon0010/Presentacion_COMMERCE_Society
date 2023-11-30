@@ -1,3 +1,8 @@
-.global-bg {
-    background-color: rgb(220, 220, 220);
+body {
+  background-color: rgb(220, 220, 220);
+  background-size: cover;
+  background-attachment: fixed;
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
 }
