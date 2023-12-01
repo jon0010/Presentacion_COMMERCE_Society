@@ -113,7 +113,7 @@ export const LandingPage = () => {
       <div className="content-container1">
         <div className="row p-0 m-0">
           <div
-            className="col-md-7 col-sm-12 fw-semibold text-white ms-5 text-sm"
+            className="col-md-7 col-sm-12 fw-semibold text-white ms-3 text-sm"
             style={{ ...getFontSizeAndMargin() }}
           >
             <p>
